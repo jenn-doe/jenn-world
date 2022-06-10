@@ -14,10 +14,6 @@ body {
   min-width: 100%;
 }
 
-.overlay-container {
-  display: flex;
-  justify-content: center;
-}
 /* Inspo taken from https://nelsonheinemann.com/ */
 .overlay-logo {
   position: fixed;
