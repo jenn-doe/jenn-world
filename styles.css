@@ -8,7 +8,26 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+
 .content {
+  min-height: 1500px;
+  min-width: 100%;
+}
+
+.overlay-container {
+  display: flex;
+  justify-content: center;
+}
+/* Inspo taken from https://nelsonheinemann.com/ */
+.overlay-logo {
+  position: fixed;
+  z-index: 1;
+  width: 80%;
+  max-width: 900px;
+  margin-top: 20%;
+}
+
+.stairs {
   list-style-type: unset;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 30px;
@@ -23,32 +42,32 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.content-line {
+.stairs-line {
   overflow: hidden;
   position: relative;
 }
-.content-line:nth-child(odd) {
+.stairs-line:nth-child(odd) {
   transform: skew(60deg, -30deg) scaleY(0.66667);
 }
-.content-line:nth-child(even) {
+.stairs-line:nth-child(even) {
   transform: skew(0deg, -30deg) scaleY(1.33333);
 }
-.content-line:nth-child(1) {
+.stairs-line:nth-child(1) {
   left: 1em;
 }
-.content-line:nth-child(2) {
+.stairs-line:nth-child(2) {
   left: 1.5em;
 }
-.content-line:nth-child(3) {
+.stairs-line:nth-child(3) {
   left: 2em;
 }
-.content-line:nth-child(4) {
+.stairs-line:nth-child(4) {
   left: 2.5em;
 }
-.content-line:nth-child(5) {
+.stairs-line:nth-child(5) {
   left: 3em;
 }
-.content-line:nth-child(6) {
+.stairs-line:nth-child(6) {
   left: 3.5em;
 }
 
